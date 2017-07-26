@@ -18,17 +18,17 @@ describe('mxnBanks Library', () => {
 	})	
 
 	it('Valid should return true ', () => {
-		let valid = mxnBanks.valid('044320010044816821')
+		let valid = mxnBanks.isValid('044320010044816821')
 		expect(valid).toBe(true)
 	})	
 
 	it('Valid should return false ', () => {
-		let valid = mxnBanks.valid('044320010044816822')
+		let valid = mxnBanks.isValid('044320010044816822')
 		expect(valid).toBe(false)
 	})
 
 	it('Valid should return error if clabe.length < 18 ', () => {
-		let valid = mxnBanks.valid('04432001004481682')
+		let valid = mxnBanks.isValid('04432001004481682')
 		expect(valid).toMatch('CLABE is too short')
 	})
 })
