@@ -1,7 +1,7 @@
 {
   "name": "mxn-banks",
-  "description": "The best project ever.",
-  "version": "0.1.0",
+  "description": "Get mexican banks from IBAN",
+  "version": "0.1.1",
   "homepage": "https://github.com/aldo/mxn-banks-js",
   "author": {
     "name": "aldosolorzano",
@@ -20,7 +20,7 @@
       "url": "https://github.com/aldo/mxn-banks/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "lib/mxn-banks",
+  "main": "lib/mxnBanks.js",
   "engines": {
     "node": ">= 0.8.0"
   },
