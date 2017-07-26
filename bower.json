@@ -1,0 +1,21 @@
+{
+  "name": "mxn-banks",
+  "description": "Autocomplete mexican banks information.",
+  "main": "./lib/mxnBanks.js",
+  "authors": [
+    "aldosolorzano"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "bank",
+    "mexican"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
