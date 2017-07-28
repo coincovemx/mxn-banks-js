@@ -1,6 +1,7 @@
 {
   "name": "mxn-banks",
   "description": "Autocomplete mexican banks information.",
+  "version": "0.1.2",
   "main": "./dist/mxnBanks.js",
   "authors": [
     "aldosolorzano"
