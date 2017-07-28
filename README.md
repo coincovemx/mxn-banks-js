@@ -4,7 +4,7 @@ Get mexican banks from IBAN
 
 ## Getting Started
 Install the node module with: `npm install mxn-banks`
-Install the node module with: `bower install mxn-banks`
+Install the bower package with: `bower install mxn-banks`
 
 ```javascript
 var MxnBanks = require('mxn-banks'); // nodejs
