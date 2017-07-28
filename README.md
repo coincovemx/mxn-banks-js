@@ -4,13 +4,14 @@ Get mexican banks from IBAN
 
 ## Getting Started
 Install the node module with: `npm install mxn-banks`
+Install the node module with: `bower install mxn-banks`
 
 ```javascript
 var MxnBanks = require('mxn-banks'); // nodejs
 MxnBanks is defined in the window object // Bower
 ```
 ## Examples
-```
+```javascript
 MxnBanks.toJson(); // "Return an array of objects with all banks."
 // The isValid function calculates the control digit. 
 MxnBanks.isValid('002180700866064000') // True
