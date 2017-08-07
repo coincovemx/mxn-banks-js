@@ -11,24 +11,39 @@ describe('mxnBanks Library', () => {
 		console.log()
 		expect(mxnBanks.toJson()).toBe(banks);
 	})
+  let validClabes = [
+    '002073662461479944',
+    '012098011316193496',
+    '014427566437837360',
+    '137061102677089112'
+  ]
+  validClabes.forEach(function(n) {
+    it('Valid should return true ', () => {
+      let valid = mxnBanks.isValid(n)
+      expect(valid).toBe(true)
+    })
+  })
+  let invalidClabes = [
+   '002073662461479942',
+   '012098011316193492',
+   '014427566437837362',
+   '137061102677089111'
+  ]
+  invalidClabes.forEach(function(n) {
+    it('Valid should return false ', () => {
+      let valid = mxnBanks.isValid(n)
+      expect(valid).toBe(false)
+    })
+  })
 
-	it('should return bank object', () => {
-		let fromIban = mxnBanks.fromIban('044320010044816821')
-		expect(JSON.stringify(fromIban)).toBe(JSON.stringify(scotiaBank))
-	})	
-
-	it('Valid should return true ', () => {
-		let valid = mxnBanks.isValid('044320010044816821')
-		expect(valid).toBe(true)
-	})	
 
 	it('Valid should return false ', () => {
-		let valid = mxnBanks.isValid('044320010044816822')
+		let valid = mxnBanks.isValid('002073560102605921')
 		expect(valid).toBe(false)
 	})
 
 	it('Valid should return error if clabe.length < 18 ', () => {
-		let valid = mxnBanks.isValid('04432001004481682')
-		expect(valid).toMatch('CLABE is too short')
+		expect(mxnBanks.isValid('04432001004481682')).toBe(false)
+		expect(mxnBanks.isValid('044324481682')).toBe(false)
 	})
 })
