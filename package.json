@@ -1,7 +1,7 @@
 {
   "name": "mxn-banks",
   "description": "Get mexican banks from IBAN",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/aldo/mxn-banks-js",
   "author": {
     "name": "aldosolorzano",
@@ -32,7 +32,7 @@
     "grunt-contrib-jshint": "~0.6.4",
     "grunt-contrib-nodeunit": "~0.2.0",
     "grunt-contrib-watch": "~0.5.3",
-    "jasmine": "^2.6.0"
-  },
-  "keywords": []
+    "jasmine": "^2.6.0",
+    "browserify": "^14.4.0"
+  }
 }
