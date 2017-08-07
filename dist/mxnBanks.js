@@ -188,35 +188,37 @@ module.exports=[
 ]
 
 },{}],2:[function(require,module,exports){
-const banks = require('./banks.json');
+'use strict';
 
-exports.toJson = () => {
+var banks = require('./banks.json');
+
+exports.toJson = function () {
   return banks;
-}
+};
 
-exports.fromIban = (clabe) => {
-  let mxnBank;
-  banks.forEach( (bank)=> {
+exports.fromIban = function (clabe) {
+  var mxnBank = void 0;
+  banks.forEach(function (bank) {
     if (clabe.slice(0, 3) === bank.number) {
       mxnBank = bank;
     }
-  })
-  return mxnBank;
-}
-
-exports.isValid = (clabe) => {
-  clabeLength = 18
-  if (clabe.length  < clabeLength || clabe.length > clabeLength) return false
-  return clabe.slice(-1) == calcChecksum(clabe)
-}
-
-const calcChecksum  = function(clabeNum) {
-  var sum = 0;
-  clabeNum.split('').slice(0, 17).forEach( (digit, index) => {
-    sum += (parseInt(digit) * [3, 7, 1][index % 3]) % 10;
   });
-  return (10 - (sum % 10)) % 10;
-}
+  return mxnBank;
+};
+
+exports.isValid = function (clabe) {
+  clabeLength = 18;
+  if (clabe.length < clabeLength || clabe.length > clabeLength) return false;
+  return clabe.slice(-1) == calcChecksum(clabe);
+};
+
+var calcChecksum = function calcChecksum(clabeNum) {
+  var sum = 0;
+  clabeNum.split('').slice(0, 17).forEach(function (digit, index) {
+    sum += parseInt(digit) * [3, 7, 1][index % 3] % 10;
+  });
+  return (10 - sum % 10) % 10;
+};
 
 },{"./banks.json":1}]},{},[2])(2)
 });
