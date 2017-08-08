@@ -207,7 +207,7 @@ exports.fromIban = function (clabe) {
 };
 
 exports.isValid = function (clabe) {
-  clabeLength = 18;
+  var clabeLength = 18;
   if (clabe.length < clabeLength || clabe.length > clabeLength) return false;
   return clabe.slice(-1) == calcChecksum(clabe);
 };
