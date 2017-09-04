@@ -8,7 +8,6 @@ let banks = require('../lib/banks.json');
 
 describe('mxnBanks Library', () => {
 	it('should load the banks', () => {
-		console.log()
 		expect(mxnBanks.toJson()).toBe(banks);
 	})
   let validClabes = [
@@ -27,7 +26,9 @@ describe('mxnBanks Library', () => {
    '002073662461479942',
    '012098011316193492',
    '014427566437837362',
-   '137061102677089111'
+   '137061102677089111',
+   '555555555555555555',
+   '666666666666666660',
   ]
   invalidClabes.forEach(function(n) {
     it('Valid should return false ', () => {
@@ -35,8 +36,6 @@ describe('mxnBanks Library', () => {
       expect(valid).toBe(false)
     })
   })
-
-
 	it('Valid should return false ', () => {
 		let valid = mxnBanks.isValid('002073560102605921')
 		expect(valid).toBe(false)

@@ -209,6 +209,7 @@ exports.fromIban = function (clabe) {
 exports.isValid = function (clabe) {
   var clabeLength = 18;
   if (clabe.length < clabeLength || clabe.length > clabeLength) return false;
+  if (!this.fromIban(clabe)) return false; 
   return clabe.slice(-1) == calcChecksum(clabe);
 };
 
