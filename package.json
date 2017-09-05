@@ -1,7 +1,7 @@
 {
   "name": "mxn-banks",
   "description": "Get mexican banks from IBAN",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "homepage": "https://github.com/aldosolorzano/mxn-banks-js",
   "author": {
     "name": "aldosolorzano",
