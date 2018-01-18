@@ -181,6 +181,11 @@ module.exports=[
     "abbreviate": "BIM"
   },
   {
+    "number": "156",
+    "name": "Banco Sabadell, S.A., Institución de Banca Múltiple",
+    "abbreviate": "SABADELL"
+  },
+  {
     "number": "166",
     "name": "Banco del Ahorro Nacional y Servicios Financieros, S.N.C.",
     "abbreviate": "BANSEFI"
@@ -209,7 +214,7 @@ exports.fromIban = function (clabe) {
 exports.isValid = function (clabe) {
   var clabeLength = 18;
   if (clabe.length < clabeLength || clabe.length > clabeLength) return false;
-  if (!this.fromIban(clabe)) return false; 
+  if (!undefined.fromIban(clabe)) return false;
   return clabe.slice(-1) == calcChecksum(clabe);
 };
 
