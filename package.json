@@ -2,22 +2,22 @@
   "name": "mxn-banks",
   "description": "Get mexican banks from IBAN",
   "version": "0.1.6",
-  "homepage": "https://github.com/aldosolorzano/mxn-banks-js",
+  "homepage": "https://github.com/coincovemx/mxn-banks-js",
   "author": {
-    "name": "aldosolorzano",
-    "email": "aldosolorzanop@gmail.com"
+    "name": "coincovemx",
+    "email": "coincovemxp@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/aldosolorzano/mxn-banks-js.git"
+    "url": "git://github.com/coincovemx/mxn-banks-js.git"
   },
   "bugs": {
-    "url": "https://github.com/aldosolorzano/mxn-banks-js/issues"
+    "url": "https://github.com/coincovemx/mxn-banks-js/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/aldosolorzano/mxn-banks/blob/master/LICENSE-MIT"
+      "url": "https://github.com/coincovemx/mxn-banks/blob/master/LICENSE-MIT"
     }
   ],
   "main": "lib/mxnBanks.js",
