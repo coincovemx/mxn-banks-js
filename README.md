@@ -16,7 +16,7 @@ MxnBanks.toJson(); // "Return an array of objects with all banks."
 // The isValid function calculates the control digit. 
 MxnBanks.isValid('002180700866064000') // True
 var bank = MxnBanks.fromIban('002180700866064000'); 
-// {number: "002", name: "Banco Nacional de México, S.A.", abreviate: "BANAMEX"}
+// {number: "002", name: "Banco Nacional de México, S.A.", abbreviate: "BANAMEX"}
 bank.name // "Banco Nacional de México, S.A."
 bank.abbreviate // "BANAMEX"
 bank.number // "002"
