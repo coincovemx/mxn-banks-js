@@ -126,6 +126,11 @@ module.exports=[
     "abbreviate": "BMULTIVA"
   },
   {
+    "number": "133",
+    "name": "Banco Actinver, S.A.",
+    "abbreviate": "ACTINVER"
+  },
+  {
     "number": "134",
     "name": "Banco Wal Mart de México Adelante, S.A.",
     "abbreviate": "WAL-MART"
